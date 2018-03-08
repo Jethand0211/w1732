@@ -1,0 +1,241 @@
+/*通用*/
+*{margin: 0;
+    padding: 0}
+body{background: #f1f2f6;}
+
+/*头部制作（捷文）*/
+.top{width: 100%;
+    height: 120px;
+    background: red}
+
+/*正文*/
+.call_essay{width: 780px;
+    height: 1802px;
+    padding: 70px 160px 220px 160px;
+    margin: 0 auto;
+    background: white}
+/*1.标题*/
+.essay_tit_h1{font-size: 54px;
+    width: 780px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    color: #311759;
+    font-family: STKaiti, KaiTi_GB2312, "华文楷体", "宋体", Arial, Helvetica, sans-serif;}
+.call_essay h2{font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    letter-spacing: 6px;
+    font-weight: normal;
+    color: #311759;
+    width: 780px;
+    height: 21px;
+    text-align: center;}
+.essay_img_1{display: block;
+    margin:15px auto 0;}
+.essay_tit_h2{color: #311759;
+    width: 780px;
+    font-size: 30px;
+    height: 60px;
+    font-weight: bold;
+    font-family: STKaiti, KaiTi_GB2312, "华文楷体", "宋体", Arial, Helvetica, sans-serif;
+    position: relative;
+    background: url("../img/首页/bird_tit_line.png") no-repeat 0 58px;
+    margin-top: 70px;}
+.essay_tit_h2 span{display: block;
+    width: 61px;
+    height: 58px;
+    background: url("../img-联系我们/pen_article_white.png") no-repeat;
+    position: absolute;right:-2px;top:7px;}
+.essay_tit_h2 span:hover
+{background: url("../img-企业文化/pen_article_white.png") no-repeat -61px 0}
+/*2.内容*/
+.essay_notice{width: 780px;
+    height: 37px;
+    padding-top: 15px;
+    margin-bottom: 60px;}
+.essay_notice span{color: #6b6a6f;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;}
+.essay_img{display: block;
+    margin-top: 0;}
+.essay_content{width: 780px;
+    height: 998px;
+    margin-top: 30px;
+    font-family: STKaiti, KaiTi_GB2312, "华文楷体", "宋体", Arial, Helvetica, sans-serif; }
+.essay_content h5{font-size: 22px;
+    margin-bottom: 23px;
+    font-weight: normal;}
+.essay_content p{font-size: 15px;
+    line-height: 22px;
+    margin-bottom: 23px;}
+/*3.喜欢点击*/
+.essay_like{width: 73px;
+    height: 73px;
+    margin: 80px 350px 0 350px;
+    background: url("../img-联系我们/essay_like.png") no-repeat;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden}
+@keyframes like {
+    0%{ width: 73px; transform: scale(0.9,1.1)}
+    13%{ transform: scale(1.1,0.9)}
+    26%{ transform: scale(0.98,1.02)}
+    39%{ transform: scale(1.02,0.98)}
+    52%{ width: 220px; transform: scale(1,1)}
+    100%{ width: 220px; transform: scale(1,1)}
+}
+.essay_like:hover{animation: like 1s linear forwards;}
+.essay_like_hd{width:140px;
+    height: 43px;
+    background: url("../img-联系我们/essay_like_hd.png") no-repeat;
+    font-size: 15px;
+    color: white;
+    font-family: STKaiti, KaiTi_GB2312, "华文楷体", "宋体", Arial, Helvetica, sans-serif;
+    text-align: center;
+    line-height: 35px;
+    position: absolute;
+    top:20px;left: 80px;
+    transition: all 1s;}
+/*4.喜欢：隐藏点击效果*/
+.hidden_content{width: 500px;
+    height: 200px;
+    margin: 0 auto;
+    position: relative;}
+.hidden_content_sp{width: 250px;
+    height: 100px;
+    background: #f2f2f2;
+    position: absolute;
+    bottom: 10px;
+    left: 250px;
+    border-radius: 10%;
+    color: #4f4c43;
+    font-size: 30px;
+    letter-spacing: 5px;
+    text-align: center;
+    line-height: 100px;
+    opacity: 0; }
+@keyframes hidden_move {
+    0%{opacity:0.5;bottom: 30px;}
+    10%{opacity: 1;bottom: 60px;}
+    20%{transform: scale(0.9,0.9)}
+    30%{  transform: scale(0.9,0.9)  }   /*缩小*/
+    40%{ transform: scale(1.1,1.1) rotate(5deg)}   /*变大加旋转角度*/
+    50%{ transform: scale(1.1,1.1) rotate(-5deg)}     /*变大加旋转角度*/
+    60%{ transform: scale(1.1,1.1) rotate(5deg)}   /*变大加旋转角度*/
+    70%{ transform: scale(1.1,1.1) rotate(-5deg)}   /*变大加旋转角度*/
+    80%{ transform: scale(1.0,1.0)}
+    90%{ transform: scale(1.0,1.0);opacity: 0.5;left: -100px;}
+    100%{ opacity:0;left:-200px; }
+}
+.click_twice{width: 268px;
+    height: 268px;
+    background: url("../img-联系我们/good.jpg") no-repeat;
+    position: absolute;right: 120px;
+    opacity: 0;
+    border-radius: 30%;  }
+@keyframes twice_move {
+    0%{opacity:0.15;transform: scale(0,0) rotate(0deg);bottom:125px;right: 120px;}
+    80%{opacity:0; transform: scale(0.9,0.9) rotate(720deg);right:300px;bottom: 180px; }
+    84%{opacity:0; right:120px;bottom:0; }
+    88%{opacity:0; right:120px;bottom: -80px; }
+    90%{opacity:0.8; transform: scale(1.1,1.1) rotate(715deg);right:120px;bottom: -80px }
+    94%{opacity:1;transform: scale(0.8,0.8) rotate(720deg);right:120px;bottom: -80px }
+    98%{opacity:0.8; transform: scale(1.1,1.1) rotate(725deg);right:120px;bottom: -80px }
+    100%{opacity:1;transform: scale(0.8,0.8) rotate(720deg);right:120px;bottom: -80px }
+}
+/*底部*/
+.ft_wave{width: 100%;
+    background-color: #FFFFFF;
+    height: 33px;
+    background-image:url("../img/首页/footer_waveline.png");
+    background-position: top center;
+    background-repeat: no-repeat;}
+.footer{width: 100%;
+    height: 348px;
+    position: relative;
+    background: url("../img/首页/footer_bg.jpg") no-repeat;}
+.ft_center{width: 1100px;
+    height: 329px;
+    margin: 0 auto;
+    position: relative;}
+.ft_notice{display: block;
+    width: 1100px;
+    height: 65px;
+    line-height: 65px;
+    text-align: center;
+    margin-top:79px;
+    position: absolute;bottom: 0;
+    border-top: 2px #9890a2 dashed;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: all 1s;
+    font-size: 15px;
+    text-decoration: none;
+    font-family: STKaiti, KaiTi_GB2312, "华文楷体", "宋体", Arial, Helvetica, sans-serif;}
+.ft_notice:hover{color: #00a1d6}
+/*底部：音乐*/
+.ft_music{width: 840px;
+    height: 83px;
+    position: relative;
+    padding-top: 100px;
+    padding-left: 260px;}
+.music{width: 57px;
+    height: 57px;
+    border:2px solid #ccd0d7;
+    position: relative;
+    float: left;
+    margin-left: 20px;
+    margin-top: 10px;
+    text-align: center;
+    line-height: 57px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFFFFF;
+    border-radius: 50%;
+    cursor: pointer;
+    font-family: STKaiti, KaiTi_GB2312, "华文楷体", "宋体", Arial, Helvetica, sans-serif;}
+@keyframes dh {
+    0%{transform: scale(0.9,1.1)}
+    15%{transform: scale(1.1,0.9)}
+    30%{transform: scale(0.85,1.15)}
+    45%{transform: scale(1.15,0.85)}
+    60%{transform: scale(1.1,0.9)}
+    75%{transform: scale(0.9,1.1)}
+    90%{transform: scale(1,1)}
+    100%{transform: scale(1,1)}
+}
+.music:hover{animation: dh 0.8s forwards;
+    background: #02a2d6;}
+/*浮动*/
+.fixed{width: 87px;
+    height: 161px;
+    position: fixed;
+    right: 40px;
+    bottom: 160px;
+    display: none;
+}   /*一开始隐藏，transition设置all让他出现效果。*/
+.fixed_earth{width: 87px;
+    height: 87px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+    cursor: pointer;}
+.fixed_earth img{position: absolute;right: 0;}
+@keyframes earth {
+    0%{  width: 87px;transform: scale(0.9,1.1)} /*宽度不变，尺寸变换*/
+    13%{ transform: scale(1.1,0.9)}   /*尺寸变换*/
+    26%{ transform: scale(0.98,1.02)}  /*尺寸变换*/
+    39%{ transform: scale(1.02,0.98)}   /*尺寸变换*/
+    52%{  width: 235px;transform: scale(1,1)}   /*宽度恢复，显示图片*/
+    100%{  width: 235px;transform: scale(1,1)}  /*同上*/
+}
+.fixed_earth:hover{animation:earth 1s forwards;}
+.fixed_top{width: 50px;
+    height: 50px;
+    background: url("../img/首页/fixed_top.png") no-repeat 0 0;
+    position:absolute;
+    left: 17px;
+    cursor: pointer;}
+.fixed_top:hover{background-position:0 -50px;
+    transition: all 0.3s ease;}

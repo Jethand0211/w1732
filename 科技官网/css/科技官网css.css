@@ -1,0 +1,1598 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+}
+body{
+    background-color: #f1f2f6;
+}
+/*头部轮播*/
+.banner_bg{
+    width: 1349px;
+    height: 593px;
+    margin: 0 auto;
+    background:url("../img/首页/banner01_bg.jpg")no-repeat top;
+    position: relative;
+}
+/*轮播第一个div*/
+.banner_all_img01{
+    width: 550px;
+    height: 300px;
+    position: absolute;
+    left: 500px;
+    top: 190px;
+    display: none;
+}
+/*轮播第2个div*/
+.banner_all_img02{
+    width: 550px;
+    height: 400px;
+    position: absolute;
+    left: 300px;
+    top: 100px;
+    display: none;
+}
+/*轮播第3个div*/
+.banner_all_img03{
+    width: 550px;
+    height: 300px;
+    position: absolute;
+    left: 500px;
+    top: 190px;
+}
+/*3个div里面的动态图片*/
+.img02_pic01{
+    position: absolute;
+    left: 650px;
+    animation: img02_pic01 1s linear forwards;
+
+}
+@keyframes img02_pic01 {
+    0%{
+        left: 650px;
+
+    }
+    25%{
+        left: 220px;
+    }
+    50%{
+        left: 190px;
+    }
+    75%{
+        left: 220px;
+    }
+    100%{
+        left: 200px;
+
+    }
+}
+.img02_pic02{
+    position: relative;
+    top: 100px;
+
+    animation: img02_pic02 1s linear forwards;
+}
+@keyframes img02_pic02 {
+    0%{
+        left: 10px;
+    }
+    100%{
+        left:50px;
+    }
+}
+.banner_pic01{
+   position: relative;
+    animation: pic01 .5s linear;
+}
+@keyframes pic01 {
+    0%{
+        right: 300px;
+    }
+    100%{
+        right: 0;
+    }
+}
+.banner_pic02{
+    position: relative;
+    margin-top: 30px;
+    animation: pic02 1s linear;
+}
+@keyframes pic02 {
+    0%{
+        left: 300px;
+    }
+    25%{
+        left: -10px;
+    }
+    50%{
+        left: 30px;
+    }
+    75%{
+        left: -10px;
+    }
+    100%{
+        left: 0;
+    }
+
+
+}
+.banner_pic03{
+    margin-top: 20px;
+    margin-left: -20px;
+}
+
+/* <!--底部点击滚动小点点-->*/
+.banner_change{
+    width: 216px;
+    height: 29px;
+    position: absolute;
+    bottom: 40px;
+    left: 550px;
+    background: url("../img/首页/next&prev_line.png")no-repeat;
+    background-position-y:15px;
+    background-position-x:5px;
+}
+/*左边点击建*/
+.pre_left{
+    width: 29px;
+    height: 29px;
+    display: inline-block;
+    background: url("../img/首页/prev_左箭头.png")no-repeat;
+}
+.pre_left:hover{
+    background: url("../img/首页/prev_左箭头_hover.png")no-repeat;
+    animation: hover_scale .5s;
+}
+/*右边点击建*/
+.next_right{
+    width: 29px;
+    height: 29px;
+    display: inline-block;
+    background: url("../img/首页/next_右箭头.png")no-repeat;
+    float: right;
+}
+.next_right:hover{
+    background: url("../img/首页/next_右箭头_hover.png")no-repeat;
+    animation: hover_scale .5s linear;
+}
+@keyframes hover_scale {
+    0%{transform: scale(0.9,1.1)} /*宽度不变，尺寸变换*/
+    25%{ transform: scale(1.1,0.9)}   /*尺寸变换*/
+    50%{ transform: scale(0.98,1.02)}  /*尺寸变换*/
+    75%{ transform: scale(1.02,0.98)}   /*尺寸变换*/
+    100%{ transform: scale(1,1)}   /*宽度恢复，显示图片*/
+
+
+}
+/*中间3个点点*/
+.middle_01{
+    width: 45px;
+    height: 14px;
+   /* background: url("../img/middle01.png")no-repeat;*/
+    margin: 0 auto;
+    border: 2px solid #dddddd;
+    border-radius: 12px;
+    position: absolute;
+    right: 90px;
+    top:8px;
+    background-color: honeydew;
+}
+.middle_01_li{
+    width: 6px;
+    height: 6px;
+    float: left;
+    margin-left: 4px;
+    margin-top: 2px;
+    border: 1px solid #dddddd;
+    border-radius: 50%;
+
+}
+
+/*主要产品*/
+.mokuai_chanpin{
+    width: 1100px;
+    height: 837px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 48px;
+}
+/*<!--向下箭头-->*/
+.go_downLogo{
+    position: absolute;
+    left: 521px;
+}
+/*产品标题*/
+.mokuai_chanpin h1{
+    width: 1100px;
+    height: 60px;
+    text-align: center;
+    font-size: 54px;
+    color: #311759;
+    position: absolute;
+    top: 120px;
+    font-weight: bold;
+    line-height: 60px;
+    font-family: STKaiti, KaiTi_GB2312, "华文楷体", "宋体", Arial, Helvetica, sans-serif;
+}
+.mokuai_chanpin h2{
+    width: 1100px;
+    height: 21px;
+    text-align: center;
+    color: #311759;
+    line-height: 21px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    letter-spacing: 6px;
+    position: absolute;
+    top: 180px;
+
+
+}
+
+.mokuai_ball{
+    width: 37px;
+    height: 8px;
+    position: absolute;
+    top: 241px;
+    left: 531.5px;
+}
+/*产品轮播*/
+.chanpin_banner{
+    width: 1100px;
+    height: 540px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+}
+/*<!--左端轮播小点点-->*/
+.now_line{
+    width: 19px;
+    height: 380px;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    background-color: aquamarine;
+    background: url("../img/首页/竖线.png")repeat-y 9px 20px;
+}
+/*每个小点*/
+.now_line_one{
+    width: 19px;
+    height: 11px;
+    margin-bottom: 63px;
+
+}
+/*小圆圈*/
+.now_line_span{
+    width: 11px;
+    height: 11px;
+    background: url("../img/首页/小圈.png");
+    margin: 0 auto;
+    display: block;
+    cursor: pointer;
+}
+/*大圆圈*/
+.now_line_i{
+    width: 19px;
+    height: 19px;
+    background: url("../img/首页/大圆点.png");
+    cursor: pointer;
+    position: relative;
+    left: 0px;
+    top: -4px;
+    float: left;
+    display: none;
+}
+/*需要用到的6个div*/
+.chanpin_banner_content01{
+    width: 1020px;
+    height: 437px;
+    position: absolute;
+    top: 0;
+    right: 0;
+ /*   display: none;*/
+
+}
+.chanpin_banner_content02{
+    width: 1020px;
+    height: 437px;
+    position: absolute;
+    top: 0;
+    right: 0;
+        display: none;
+
+}
+.chanpin_banner_content03{
+    width: 1020px;
+    height: 437px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+.chanpin_banner_content04{
+    width: 1020px;
+    height: 437px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+.chanpin_banner_content05{
+    width: 1020px;
+    height: 437px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+.chanpin_banner_content06{
+    width: 1020px;
+    height: 437px;
+    position: absolute;
+    top: 0;
+    right: 0;
+        display: none;
+}
+/*左边大图动画*/
+@keyframes left_img {
+     0%{
+         right: -500px;
+     }
+    100%{
+        right:  0;
+    }
+}
+@keyframes left_img1 {
+    0%{
+        left: -500px;
+    }
+    100%{
+        left:  0;
+    }
+}
+/*左边大图*/
+.left_img{
+    width: 370px;
+    height: 436px;
+   position: relative;
+    animation: left_img 1s linear ;
+
+}
+/*右边内容*/
+.content_right{
+    width: 613px;
+    height: 437px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #f1f2f6;
+    float: left;
+}
+/*内容标题*/
+.right_title{
+    width: 613px;
+    height: 60px;
+    color: #311759;
+    position: relative;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: STKaiti, KaiTi_GB2312, "华文楷体", "宋体", Arial, Helvetica, sans-serif;
+    background: url("../img/首页/直线.png")no-repeat left bottom;;
+    animation: right_title 1s linear ;
+}
+/*标题动画*/
+@keyframes right_title {
+    0%{
+        right: -400px;
+    }
+    100%{
+        right: 0;
+    }
+}
+@keyframes right_title1{
+    0%{
+        left: -400px;
+    }
+    100%{
+        left: 0;
+    }
+}
+/*笔*/
+.content_right_span{
+    width: 61px;
+    height: 54px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: url("../img/首页/笔.png");
+}
+/*文本主题*/
+.right_body{
+    width: 613px;
+    height: 263px;
+
+    font-family: STKaiti, KaiTi_GB2312, "华文楷体", "宋体", Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: #565559;
+    font-weight: 500;
+    letter-spacing: 0px;
+    margin-top: 50px;
+
+}
+/*文本*/
+.p1{
+    width: 603px;
+    height: 101px;
+
+}
+.p1_img{
+    width: 96px;
+    height: 96px;
+    float: left;
+
+}
+.p1_text{
+    width: 470px;
+    height: 100px;
+    float: right;
+
+}
+.p1_text h3{
+    width: 470px;
+    height: 27px;
+    font-size: 24px;
+    position: relative;
+}
+.p1_text p{
+    width: 480px;
+    height: 72px;
+    line-height: 24px;
+    font-family: KaiTi_GB2312;
+    position: relative;
+    animation: right_title 1s linear ;
+}
+.p1_text02 p{
+    width: 480px;
+    height: 72px;
+    line-height: 24px;
+    font-family: KaiTi_GB2312;
+    position: relative;
+    top: -50px;
+    animation: right_title 1s linear ;
+}
+.p1_text03 p{
+    width: 480px;
+    height: 24px;
+    line-height: 24px;
+    font-family: KaiTi_GB2312;
+    position: relative;
+    animation: right_title 1s linear ;
+}
+.p1_text04 p{
+    width: 480px;
+    height: 72px;
+    line-height: 24px;
+    font-family: KaiTi_GB2312;
+    position: relative;
+    top: -50px;
+    animation: right_title 1s linear ;
+}
+.p1_text05 p{
+    width: 480px;
+    height: 24px;
+    line-height: 24px;
+    font-family: KaiTi_GB2312;
+    position: relative;
+    animation: right_title 1s linear ;
+}
+.p1_text06 p{
+    width: 480px;
+    height: 72px;
+    line-height: 24px;
+    font-family: KaiTi_GB2312;
+    position: relative;
+    top: -50px;
+    animation: right_title 1s linear ;
+}
+.p2{
+    width: 613px;
+    height: 24px;
+    line-height: 24px;
+    font-family: KaiTi_GB2312;
+    position: relative;
+    top: 50px;
+    animation: right_title 1s linear ;
+}
+/*点击里的虚线*/
+.change_line{
+    width: 610px;
+    height: 29px;
+    background-color: royalblue;
+    background: url("../img/首页/next&prev_line.png")repeat-x left center;;
+    position: absolute;
+    right: 0;
+    bottom: 280px;
+    z-index: 20;
+}
+/*左边点击*/
+.pre{
+    position: absolute;
+    top: 0;
+    height: 29px;
+    width: 29px;
+    background: url("../img/首页/prev_左箭头.png");
+}
+.pre:hover{
+    background: url("../img/首页/prev_左箭头_hover.png");
+    animation: hover_scale .5s linear;
+}
+/*右边点击*/
+.next{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 29px;
+    width: 29px;
+    background: url("../img/首页/next_右箭头.png");
+}
+.next:hover{
+    background: url("../img/首页/next_右箭头_hover.png");
+    animation: hover_scale .5s linear;
+}
+/*右下角小总结*/
+.tip{
+    position: absolute;
+    bottom: 0;
+    right: 30px;
+}
+.tip02{
+    position: absolute;
+    bottom: 60px;
+    right: 30px;
+}
+/*上下引号*/
+.yinhao_you{
+    position: relative;
+    margin-left: 140px;
+    animation: yinhao 1s linear ;
+}
+.yinhao_zuo{
+    position: relative;
+    right: 20px;
+    animation: yinhao 1s linear ;
+}
+@keyframes yinhao {
+    0%{
+        left: -50px;
+    }
+    100%{
+        left: 0;
+    }
+}
+
+/*公司简介*/
+/*公司简介背景*/
+.jianjie_wrap{
+    margin: 0 auto;
+    width: 1349px;
+    height: 923px;
+    background: url("../img/首页/星空背景.jpg");
+    position: relative;
+}
+/*简介框框*/
+.mokuai_jianjie{
+    width: 1100px;
+    height: 837px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 48px;
+}
+/*简介标题*/
+.mokuai_jianjie h1{
+    width: 1100px;
+    height: 60px;
+    text-align: center;
+    font-size: 54px;
+    color: #fff;
+    position: absolute;
+    top: 120px;
+    font-weight: bold;
+    line-height: 60px;
+    font-family: STKaiti, KaiTi_GB2312, "华文楷体", "宋体", Arial, Helvetica, sans-serif;
+}
+.mokuai_jianjie h2{
+    width: 1100px;
+    height: 21px;
+    text-align: center;
+    color: #fff;
+    line-height: 21px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    letter-spacing: 6px;
+    position: absolute;
+    top: 180px;
+
+
+}
+/*主要内容*/
+.jianjie_box{
+    width: 1100px;
+    height: 540px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+}
+.jianjie_box_content{
+    width: 1020px;
+    height: 437px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+/*图片*/
+.jianjie_img{
+    width: 370px;
+    height: 436px;
+    position: relative;
+}
+/*右边内容*/
+.jianjie_right{
+    width: 613px;
+    height: 437px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    float: left;
+}
+/*标题框框*/
+.jianjie_title{
+    width: 613px;
+    height: 60px;
+    color: #fff;
+    position: relative;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: STKaiti, KaiTi_GB2312, "华文楷体", "宋体", Arial, Helvetica, sans-serif;
+    background: url("../img/首页/直线.png")no-repeat left bottom;
+}
+/*p的内容*/
+.jianjie_p1_text{
+    width: 470px;
+    height: 100px;
+    float: right;
+   ;
+
+
+}
+.jianjie_p1_text_h3{
+    font-size: 24px;
+    font-family: STKaiti, KaiTi_GB2312, "华文楷体", "宋体", Arial, Helvetica, sans-serif;
+    color: #bca9d7;
+ }
+.jianjie_p1_text p{
+    width: 480px;
+    height: 72px;
+    line-height: 24px;
+    font-family: KaiTi_GB2312;
+    position: relative;
+    color: #bca9d7;
+}
+.p3{
+    width: 613px;
+    height: 24px;
+    line-height: 24px;
+    font-family: KaiTi_GB2312;
+    position: relative;
+    top: 50px;
+    color: #bca9d7;
+}
+/*右下角带引号的总结*/
+.tip_name{
+    color: #bca9d7;
+}
+/*引号*/
+.yinhao_you1{
+    position: relative;
+    margin-left: 140px;
+}
+.yinhao_zuo1{
+    position: relative;
+    right: 20px;
+}
+
+
+
+/*业务*/
+.yewu_wrap{
+    width: 1100px;
+    height: 1820px;
+
+    margin: 0 auto;
+    position: relative;
+}
+/*鼠标图片*/
+.shubiao{
+   width: 108px;
+    height: 171px;
+    position: absolute;
+    left: 496px;
+}
+/*大标题*/
+
+.shubiao66{
+    position: absolute;
+    left: 496px;
+    margin-top: 50px;
+}
+.yewu_wrap_h1{
+    width: 1100px;
+    height: 60px;
+    position: absolute;
+    top: 180px;
+    text-align: center;
+    font-size: 54px;
+    color: #311759;
+    line-height: 60px;
+    font-family: STKaiti, KaiTi_GB2312, "华文楷体", "宋体", Arial, Helvetica, sans-serif;
+}
+
+.yewu_team_h1{
+    width: 1100px;
+    height: 60px;
+    position: relative;
+    top: 230px;
+    text-align: center;
+    font-size: 54px;
+    color: #311759;
+    line-height: 60px;
+    font-family: STKaiti, KaiTi_GB2312, "华文楷体", "宋体", Arial, Helvetica, sans-serif;
+}
+
+.yewu_team_h2{
+    width: 1100px;
+    height: 21px;
+    position: relative;
+    top: 250px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    letter-spacing: 6px;
+}
+/*小标题*/
+.yewu_wrap_h2{
+    width: 1100px;
+    height: 21px;
+    position: absolute;
+    top: 241px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    letter-spacing: 6px;
+
+
+}
+.yewu_team_ball{
+    width: 37px;
+    height: 8px;
+    position: relative;
+    top: 300px;
+    left: 531.5px;
+}
+/*3个小点点*/
+.yewu_ball{
+    width: 37px;
+    height: 8px;
+    position: relative;
+    top: 281px;
+    left: 531.5px;
+}
+/*主要内容*/
+.yewucontent_wrap{
+    width: 1100px;
+    height: 700px;
+    position: absolute;
+    top: 310px;
+    float: left;
+}
+
+
+.team_bg{
+    width: 1100px;
+    height: 700px;
+    float: left;
+  =
+}
+
+
+
+
+
+/*团队介绍轮播*/
+.team_introduce{width: 1130px;
+    height: 430px;
+    position: relative;
+    top: 300px;
+    margin: 10px auto;
+    overflow: hidden;
+
+}
+/*程序猿显示框*/
+.team_programmer{width: 1130px;
+    height: 250px;
+    padding-top: 64px;
+    position: relative}
+/*程序猿大幕布*/
+.team_longer{width: 3390px;
+    height: 250px;
+    position: absolute;}
+/*程序猿内容*/
+.program{width: 1130px;
+    height: 314px;
+    float: left;
+    position: relative}
+.program_name{width: 533px;
+    height: 188px;
+    float: left;
+    border: 1px solid #e0e1e5;
+    margin-right: 30px;
+    position: relative}
+/*1.图片*/
+.program_name_ph{width: 156px;
+    height: 156px;
+    border-radius: 50%;
+    position: absolute;
+    top:-64px;left:30px;}
+.program_name_ph img{display: block;
+    border-radius: 50%}
+.program_name_ph a{display: block;
+    width: 156px;
+    height: 156px;
+    background:url("../img/首页/program_hd.png") no-repeat;
+    opacity: 0;
+    z-index: 4;
+    position: absolute;
+    top: 0;left:0;
+    transition: all 1s;}
+.program_name_ph:hover a{opacity: 1}
+/*2.联系*/
+.program_contact{width: 47px;
+    height: 190px;
+    position: absolute;
+    background-color:#2999d6;
+    right: 0;top: -1px;}
+.qq,.weibo,.weixin,.cat{width: 47px;
+    height: 47px;
+    cursor:pointer;
+    transition: all 0.5s;}
+.qq{background: url("../img/首页/contact.png") no-repeat 14px -75px;}
+.weibo{background: url("../img/首页/contact.png") no-repeat 14px -28px;}
+.cat{background: url("../img/首页/contact.png") no-repeat 14px -126px;}
+.weixin{background: url("../img/首页/contact.png") no-repeat 14px -166px;}
+.qq:hover{background-color: #168bcb}
+.cat:hover{background-color: #168bcb}
+.weibo:hover{background-color: #168bcb}
+.weixin:hover{background-color: #168bcb}
+/*3.发送邮件*/
+.send_email{width: 246px;
+    height: 45px;
+    border: 1px solid #e0e1e5;
+    background: #e7e8ec;
+    position: absolute;
+    bottom: 20px;right: 65px;
+    transition: all 0.5s;
+    cursor: pointer}
+.send_email:hover{border: 1px solid #5f4c82;}
+.send_email i{display: block;
+    background-color: #d9d9e1;
+    float: left;
+    width: 45px;
+    height: 45px;
+    background-image: url("../img/首页/contact.png");
+    background-repeat: no-repeat;
+    background-position:  12px 17px;}
+.send_email span{width: 200px;
+    height: 45px;
+    font-size: 16px;
+    float: left;
+    font-family:STKaiti, KaiTi_GB2312, "华文楷体", "宋体", Arial, Helvetica, sans-serif;
+    text-align: center;
+    line-height: 45px;
+    color: #5f4c82;}
+/*4.名字+备注*/
+.program_name h3{width: 220px;
+    height: 30px;
+    position: absolute;
+    left: 0;
+    bottom: 50px;
+    text-align: center;
+    font-size: 24px;
+    font-family: STKaiti, KaiTi_GB2312, "华文楷体", "宋体", Arial, Helvetica, sans-serif;
+    color: #5f4c82;}
+.program_name h6{width: 220px;
+    height: 23px;
+    position: absolute;
+    left: 0;
+    bottom: 27px;
+    text-align: center;
+    font-family: STKaiti, KaiTi_GB2312, "华文楷体", "宋体", Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #5f4c82;
+    font-weight: normal;}
+.program_name p{width: 246px;
+    height: 80px;
+    position: absolute;
+    top:20px;
+    right: 65px;
+    text-indent: 2em;
+    line-height: 1.5;
+    color: #565559;
+    font-family: STKaiti, KaiTi_GB2312, "华文楷体", "宋体", Arial, Helvetica, sans-serif;
+    font-size: 16px;}
+/*轮播按钮*/
+.team_button{width: 216px;
+    height: 30px;
+    background:url("../img/首页/next&prev_line.png") no-repeat center;
+    position: absolute;
+    bottom: 70px;
+    left:457px;
+    z-index: 4}
+.team_button_left{display: block;
+    width: 29px;
+    height: 29px;
+    background: url("../img/首页/prev_jiantou.png") no-repeat;
+    position: absolute;
+    left: 0;
+    cursor: pointer;
+    z-index: 6}
+.team_button_right{display: block;
+    width: 29px;
+    height: 29px;
+    background: url("../img/首页/next_jiantou.png") no-repeat;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    z-index: 6}
+.team_button_spot li{list-style: none;}
+@keyframes jiantou {
+    0%{transform: scale(1.1,0.9);}
+    25%{transform: scale(0.9,1.1);}
+    50%{transform: scale(1.1,0.9);}
+    75%{transform: scale(0.9,1.1);}
+    100%{transform: scale(1,1);}
+}
+.team_button_left:hover{animation:jiantou 0.5s linear;
+    background: url("../img/首页/prev_jiantou_hover.png") no-repeat;}
+.team_button_right:hover{animation:jiantou 0.5s linear;
+    background: url("../img/首页/next_jiantou_hover.png") no-repeat;}
+/*轮播：中间的圆点*/
+.team_button_spot{width: 42px;
+    height: 12px;
+    border: 2px solid #e2e2e2;
+    background: #f1f2f6;
+    position: absolute;
+    bottom: 7px;
+    left: 85px;
+    border-radius:30%;
+    z-index: 6}
+.team_button_spot li{float: left;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color:lightblue;
+    margin-left: 4.5px;
+    margin-top: 2px;}
+
+
+
+.yewucontent{
+    width: 1100px;
+    height: 570px;
+
+
+}
+.yewucontent_simple{
+    width: 1100px;
+    height: 116px;
+    float: left;
+}
+.number{
+    width: 148px;
+    font-size: 90px;
+    color: #b5b6ba;
+    font-family: "宋体";
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+.yewucontent_title{
+    width: 285px;
+    text-align: right;
+    padding-top: 31px;
+    float: left;
+    color: #565559;
+}
+.yewucontent_title h1{
+    color: #311859;
+    font-size: 24px;
+    font-weight: normal;
+    text-align: right;
+}
+.yewucontent_title p{
+    font-family: STKaiti, KaiTi_GB2312, "华文楷体", "宋体", Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: #565559;
+    text-align: right;
+}
+.centering{
+    width: 116px;
+    height: 116px;
+    margin: 0 44px 0 59px;
+    cursor: pointer;
+    float: left;
+}
+.centering img{
+    margin-top: 13px;
+}
+.yewucontent_simple_right{
+    width: 320px;
+    height: 72px;
+    float: left;
+    margin: 20px 60px 0 0;
+    font-family: KaiTi_GB2312;
+}
+.yewucontent_detail{
+    width: 790px;
+    height: 190px;
+    float: left;
+    margin-top: 50px;
+    position: relative;
+    left: 155px;
+}
+.yewucontent_detail p{
+    margin-top: 20px;
+}
+.yewucontent_simple_bg{
+    width: 1100px;
+    height: 156px;
+    overflow: hidden;
+    /*animation: simple_bg 3s linear forwards;*/
+    border-bottom: dashed 1px #dddddd;
+    margin-top: 20px;
+    position: relative;
+}
+@keyframes simple_bg {
+     0%{
+         height: 156px;
+     }
+     100%{
+         height: 374px;
+     }
+ }
+@keyframes simple_bg1  {
+    0%{
+        height: 374px;
+    }
+    100%{
+        height: 156px;
+    }
+}
+.yewucontent_simple_logo{
+    width: 67px;
+    height: 67px;
+    background: url("../img/首页/加乘.png");
+    cursor: pointer;
+    float: left;
+    position: relative;
+
+}
+.centering_img:hover{
+    animation:centering_img 2s linear;
+    position: relative;
+    z-index: 20;
+
+
+}
+@keyframes centering_img {
+    0%{
+        transform: scale(.8);
+    }
+    10%{
+        transform:rotate(-15deg)
+    }
+    20%{
+        transform: scale(1.2);
+    }
+    30%{
+        transform:rotate(-15deg)
+        scale(1.1)
+    }
+    40%{
+        transform:rotate(15deg)
+        scale(1.1)
+    }
+    50%{
+        transform:rotate(-15deg)
+        scale(1.1)
+    }
+    60%{
+        transform:rotate(10deg)
+        scale(1.1)
+    }
+    70%{
+        transform:rotate(-10deg)
+        scale(1.1)
+    }
+    80%{
+        transform:rotate(-15deg)
+        scale(1.1)
+    }
+    90%{
+        transform:rotate(15deg)
+
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.yewu_wrap_wave{
+    position: absolute;
+    bottom: 0;
+}
+
+/*合作机构*/
+.our_Partners{
+    margin:0 auto;
+    width: 1349px;
+    height: 860px;
+    font-family: STKaiti, KaiTi_GB2312, "华文楷体", "宋体", Arial, Helvetica, sans-serif;
+    position: relative;
+    background: #fff;
+    font-size: 15px;
+}
+.our_Partners_content{
+    width: 1100px;
+    height: 860px;
+    margin: 0 auto;
+}
+.Partners_content_h1{
+    width: 1100px;
+    height: 60px;
+    position: absolute;
+    top: 100px;
+    text-align: center;
+    font-size: 54px;
+    color: #311759;
+    line-height: 60px;
+    font-family: STKaiti, KaiTi_GB2312, "华文楷体", "宋体", Arial, Helvetica, sans-serif;
+}
+.Partners_content_h2{
+    width: 1100px;
+    height: 21px;
+    position: absolute;
+    top: 161px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    letter-spacing: 6px;
+}
+.our_Partners_ball{
+    width: 37px;
+    height: 8px;
+    position: absolute;
+    top: 201px;
+    left: 660px;
+}
+.our_Partners_text{
+    width: 1100px;
+    height: 566px;
+    float: left;
+    position: absolute;
+    top: 281px;
+}
+.Partners_text_left{
+    width: 551px;
+    height: 371px;
+    float: left;
+    border-right: 1px solid #dddddd;
+}
+.Partners_text_left h1{
+    width: 550px;
+    height: 50px;
+    background: white;
+    line-height: 50px;
+    font-size: 36px;
+    color: #5f4c82;
+    font-family: STKaiti, KaiTi_GB2312, "华文楷体", "宋体", Arial, Helvetica, sans-serif;
+}
+.Partners_text_left h2{
+    width: 550px;
+    height: 21px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    padding-left: 6px;
+    letter-spacing: 6px;
+    color: #5f4c82;
+}
+.Partners_text_left ul li{
+    float: left;
+    width: 173px;
+    height: 80px;
+    margin-top: 60px;
+}
+.Partners_text_right{
+    width: 520px;
+    height: 371px;
+    float: right;
+    color: #5f4c82;
+}
+.Partners_text_right ul li{
+    float: left;
+    width: 173px;
+    height: 80px;
+    margin-top: 60px;
+}
+.Partners_text_right h2{
+    width: 550px;
+    height: 21px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    padding-left: 6px;
+    letter-spacing: 6px;
+    color: #5f4c82;
+}
+.our_Partners_text img:hover{
+    animation: Partners_text_img 1s ;
+
+}
+@keyframes Partners_text_img {
+    0%{opacity: .5}
+    100%{opacity: 1}
+}
+
+
+/*联系我们*/
+.contact{
+    margin:0 auto;
+    width: 1100px;
+    height: 760px;
+    position: relative;
+}
+.contact_ball{
+    width: 37px;
+    height: 8px;
+    position: absolute;
+    top: 201px;
+    left: 531.5px;
+
+}
+.contact_input{
+    width: 1100px;
+    height: 313px;
+    position: absolute;
+    top: 251px;
+}
+.input_name{
+    width: 347px;
+    height: 47px;
+    border: 1px solid #f0f0f0;
+    background: #fff;
+    float: left;
+    margin-right: 17px;
+}
+.input_name:hover{
+    border: 1px solid #d9d9e1;
+}
+.input_name_i{
+    width: 45px;
+    height: 45px;
+    background: #e7e8ec url("../img/首页/联系_icons.png")no-repeat 13px 14px;
+    display: inline-block;
+    float: left;
+}
+.input_name_i1{
+    width: 45px;
+    height: 45px;
+    background: #e7e8ec url("../img/首页/联系_icons.png")no-repeat 13px 14px;
+    display: inline-block;
+    float: left;
+    background-position: -31px 14px;
+}
+.input_name_i2  {
+    width: 45px;
+    height: 45px;
+    background: #e7e8ec url("../img/首页/联系_icons.png")no-repeat 13px 14px;
+    display: inline-block;
+    float: left;
+    background-position: -79px 14px;
+}
+.input_name input{
+    width: 286px;
+    height: 45px;
+    float: left;
+    border: none;
+    font-family: STKaiti, KaiTi_GB2312, "华文楷体", "宋体", Arial, Helvetica;
+    font-size: 18px;
+    outline: none;
+}
+.input_box{
+    width: 722px;
+    height: 212px;
+    float: left;
+    position: relative;
+    margin-top: 30px;
+}
+.input_box_i{
+    width: 45px;
+    height: 210px;
+    background: #e7e8ec url("../img/首页/联系_icons.png")no-repeat 13px 14px;
+    display: inline-block;
+    float: left;
+}
+.input_box_text{
+    line-height: 27px;
+    color: #5f4c82;
+    font-size: 16px;
+    width: 640px;
+    padding-right: 17px;
+    height: 200px;
+    border: none 0;
+    text-align: left;
+    padding-left: 18px;
+    padding-top: 10px;
+    outline: none;
+    resize: none;
+    font-family: STKaiti, KaiTi_GB2312, "华文楷体", "宋体", Arial, Helvetica;
+    background: white;
+}
+
+.input_box_right{
+    width: 339px;
+    height: 210px;
+    float: left;
+    margin-top: 40px;
+}
+.input_box_right p{
+    color: #7f7d83;
+    font-family: STKaiti, KaiTi_GB2312, "华文楷体", "宋体", Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+#input_box_right_p2{
+    font-family: STKaiti, KaiTi_GB2312, "华文楷体", "宋体", Arial, Helvetica, sans-serif;
+    color: #605f64;
+    font-size: 18px;
+    margin-top: 70px;
+
+}
+.sent_talk{
+    background: #168bcb;
+    border-color: #2999d6;
+    cursor: pointer;
+    width: 331px;
+    height: 45px;
+    border: 1px solid #dedfe3;
+    margin-top: 50px;
+}
+.sent_talk-span{
+    display: inline-block;
+    width: 218px;
+    height: 45px;
+    float: left;
+    line-height: 45px;
+    font-size: 16px;
+    width: 200px;
+    padding-left: 18px;
+    text-align: center;
+    color: #fff;
+}
+.contact_bottom{
+    width: 1100px;
+    height: 250px;
+   float: left;
+    margin-top: 50px;
+}
+.contact_bottom ul li{
+    width: 345px;
+    height: 250px;
+    float: left;
+    margin-right: 20px;
+
+}
+.contact_bottom ul li img{
+    float: left;
+}
+.contact_bottom_text{
+    width: 210px;
+    height: 170px;
+    float: right;
+
+}
+.contact_bottom_text h1{
+    width: 210px;
+    height: 60px;
+    float: left;
+    background: url("../img/首页/联系直线.png")no-repeat bottom left;
+    color: #5f4c82;
+    font-size: 2em;
+    font-family: STKaiti, KaiTi_GB2312, "华文楷体", "宋体", Arial, Helvetica, sans-serif;
+}
+.contact_bottom_text p{
+    width: 210px;
+    height: 32px;
+    font-family: STKaiti, KaiTi_GB2312, "华文楷体", "宋体", Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 32px;
+    color: #524d5c;
+    float: left;
+}
+
+
+
+/*地图与音乐*/
+.map{
+    width: 100%;
+    height: 660px;
+    position: relative;
+    top: 1700px;
+}
+.map_top {width: 1100px;
+    position: relative;
+    margin: 0 auto;
+    z-index: 10;}
+.map_top img{position: absolute;
+    top: 0;left: 0;}
+.map_btn{width: 100px;
+    height: 50px;
+    z-index: 10;
+    position: absolute;
+    right: 20px;
+    top: 50px;}
+.map_btn button{width: 36px;
+    height: 36px;
+    border-radius: 20px;
+    display: block;
+    float: left;
+    margin-left: 10px;
+    outline: none;
+    font-size: 17px;
+    font-weight: bold;
+    color: #0d74ac;
+    background-color: white;
+    border: 2px solid #0d74ac;
+    cursor: pointer;
+    transition: all 1s;}
+.map_btn button:hover{background-color: #0d74ac;
+    color: white;
+    border: 2px solid white;}
+.map_bottom{width: 100%;
+    height: 33px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background:url("../img/首页/footer_waveline.png") no-repeat top center;
+    z-index: 10;}
+/*地图1*/
+#map{width: 100%;
+    height: 660px;
+    position: absolute;
+    top: 0;
+    left:0;
+    z-index: 4;}
+/*地图2*/
+#map1{width: 100%;
+    height: 660px;
+    position: absolute;
+    top: 0;
+    left:0;
+    z-index: 1;}
+
+/*底部*/
+.footer{width: 100%;
+    height: 348px;
+    position: relative;
+    top: 1700px;
+    background: url("../img/首页/footer_bg.jpg") no-repeat;}
+.ft_center{width: 1100px;
+    height: 329px;
+    margin: 0 auto;
+    position: relative;}
+.ft_notice{display: block;
+    width: 1100px;
+    height: 65px;
+    line-height: 65px;
+    text-align: center;
+    margin-top:79px;
+    position: absolute;bottom: 0;
+    border-top: 2px #9890a2 dashed;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: all 1s;
+    font-size: 15px;
+    text-decoration: none;
+    font-family: STKaiti, KaiTi_GB2312, "华文楷体", "宋体", Arial, Helvetica, sans-serif;}
+.ft_notice:hover{color: #00a1d6}
+/*底部：音乐*/
+.ft_music{width: 840px;
+    height: 83px;
+    position: relative;
+
+}
+.ft_music ul{
+    width: 1100px;
+    height: 67px;
+    position: absolute;
+    top: 100px;
+}
+.ft_music ul li{
+    width: 57px;
+    height: 57px;
+    border:2px solid #ccd0d7;
+    position: relative;
+    left: 250px;
+    margin-right: 20px;
+    float: left;
+    text-align: center;
+    line-height: 57px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFFFFF;
+    border-radius: 50%;
+    cursor: pointer;
+    font-family: STKaiti, KaiTi_GB2312, "华文楷体", "宋体", Arial, Helvetica, sans-serif;}
+@keyframes dh {
+    0%{transform: scale(0.9,1.1)}
+    15%{transform: scale(1.1,0.9)}
+    30%{transform: scale(0.85,1.15)}
+    45%{transform: scale(1.15,0.85)}
+    60%{transform: scale(1.1,0.9)}
+    75%{transform: scale(0.9,1.1)}
+    90%{transform: scale(1,1)}
+    100%{transform: scale(1,1)}
+}
+.music:hover{animation: dh 0.8s forwards;
+    background: #02a2d6;}
+/*浮动*/
+.fixed{width: 87px;
+    height: 161px;
+    position: fixed;
+    right: 40px;
+    bottom: 160px;
+    display: none;
+    z-index: 20;
+}   /*一开始隐藏，transition设置all让他出现效果。*/
+.fixed_earth{width: 87px;
+    height: 87px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+    cursor: pointer;}
+.fixed_earth img{position: absolute;right: 0;}
+@keyframes earth {
+    0%{  width: 87px;transform: scale(0.9,1.1)} /*宽度不变，尺寸变换*/
+    13%{ transform: scale(1.1,0.9)}   /*尺寸变换*/
+    26%{ transform: scale(0.98,1.02)}  /*尺寸变换*/
+    39%{ transform: scale(1.02,0.98)}   /*尺寸变换*/
+    52%{  width: 235px;transform: scale(1,1)}   /*宽度恢复，显示图片*/
+    100%{  width: 235px;transform: scale(1,1)}  /*同上*/
+}
+.fixed_earth:hover{animation:earth 1s forwards;}
+.fixed_top{width: 50px;
+    height: 50px;
+    background: url("../img/首页/fixed_top.png") no-repeat 0 0;
+    position:absolute;
+    left: 17px;
+    cursor: pointer;}
+.fixed_top:hover{background-position:0 -50px;
+    transition: all 0.3s ease;}

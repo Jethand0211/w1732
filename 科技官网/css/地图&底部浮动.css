@@ -1,0 +1,147 @@
+*{margin: 0;padding: 0}
+/*地图*/
+.map{width: 100%;
+    height: 660px;
+    position: relative;}
+.map_top {width: 1100px;
+position: relative;
+margin: 0 auto;
+    z-index: 10;}
+.map_top img{position: absolute;
+top: 0;left: 0;}
+.map_btn{width: 100px;
+height: 50px;
+z-index: 10;
+position: absolute;
+right: 20px;
+top: 50px;}
+.map_btn button{width: 36px;
+height: 36px;
+border-radius: 20px;
+display: block;
+float: left;
+margin-left: 10px;
+outline: none;
+font-size: 17px;
+font-weight: bold;
+color: #0d74ac;
+background-color: white;
+border: 2px solid #0d74ac;
+cursor: pointer;
+transition: all 1s;}
+.map_btn button:hover{background-color: #0d74ac;
+color: white;
+border: 2px solid white;}
+.map_bottom{width: 100%;
+    height: 33px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background:url("../img/首页/footer_waveline.png") no-repeat top center;
+    z-index: 10;}
+/*地图1*/
+#map{width: 100%;
+    height: 660px;
+    position: absolute;
+    top: 0;
+    left:0;
+    z-index: 4;}
+/*地图2*/
+#map1{width: 100%;
+    height: 660px;
+    position: absolute;
+    top: 0;
+    left:0;
+    z-index: 1;}
+
+/*底部*/
+.footer{width: 100%;
+    height: 348px;
+    position: relative;
+    background: url("../img/首页/footer_bg.jpg") no-repeat;}
+.ft_center{width: 1100px;
+    height: 329px;
+    margin: 0 auto;
+    position: relative;}
+.ft_notice{display: block;
+    width: 1100px;
+    height: 65px;
+    line-height: 65px;
+    text-align: center;
+    margin-top:79px;
+    position: absolute;bottom: 0;
+    border-top: 2px #9890a2 dashed;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: all 1s;
+    font-size: 15px;
+    text-decoration: none;
+    font-family: STKaiti, KaiTi_GB2312, "华文楷体", "宋体", Arial, Helvetica, sans-serif;}
+.ft_notice:hover{color: #00a1d6}
+/*底部：音乐*/
+.ft_music{width: 840px;
+    height: 83px;
+    position: relative;
+    padding-top: 100px;
+    padding-left: 260px;}
+.music{width: 57px;
+    height: 57px;
+    border:2px solid #ccd0d7;
+    position: relative;
+    float: left;
+    margin-left: 20px;
+    margin-top: 10px;
+    text-align: center;
+    line-height: 57px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFFFFF;
+    border-radius: 50%;
+    cursor: pointer;
+    font-family: STKaiti, KaiTi_GB2312, "华文楷体", "宋体", Arial, Helvetica, sans-serif;}
+@keyframes dh {
+    0%{transform: scale(0.9,1.1)}
+    15%{transform: scale(1.1,0.9)}
+    30%{transform: scale(0.85,1.15)}
+    45%{transform: scale(1.15,0.85)}
+    60%{transform: scale(1.1,0.9)}
+    75%{transform: scale(0.9,1.1)}
+    90%{transform: scale(1,1)}
+    100%{transform: scale(1,1)}
+}
+.music:hover{animation: dh 0.8s forwards;
+    background: #02a2d6;}
+/*浮动*/
+.fixed{width: 87px;
+    height: 161px;
+    position: fixed;
+    right: 40px;
+    bottom: 160px;
+    display: none;
+    z-index: 20;
+}   /*一开始隐藏，transition设置all让他出现效果。*/
+.fixed_earth{width: 87px;
+    height: 87px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+    cursor: pointer;}
+.fixed_earth img{position: absolute;right: 0;}
+@keyframes earth {
+    0%{  width: 87px;transform: scale(0.9,1.1)} /*宽度不变，尺寸变换*/
+    13%{ transform: scale(1.1,0.9)}   /*尺寸变换*/
+    26%{ transform: scale(0.98,1.02)}  /*尺寸变换*/
+    39%{ transform: scale(1.02,0.98)}   /*尺寸变换*/
+    52%{  width: 235px;transform: scale(1,1)}   /*宽度恢复，显示图片*/
+    100%{  width: 235px;transform: scale(1,1)}  /*同上*/
+}
+.fixed_earth:hover{animation:earth 1s forwards;}
+.fixed_top{width: 50px;
+    height: 50px;
+    background: url("../img/首页/fixed_top.png") no-repeat 0 0;
+    position:absolute;
+    left: 17px;
+    cursor: pointer;}
+.fixed_top:hover{background-position:0 -50px;
+    transition: all 0.3s ease;}

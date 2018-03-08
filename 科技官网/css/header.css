@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: STKaiti, KaiTi_GB2312, "华文楷体", "宋体", Arial, Helvetica, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ul,ol{
+    list-style: none;
+}
+.all{
+    max-width: 1920px;
+    min-width: 1345px;
+    margin:0 auto;
+}
+.header{
+    position: relative;
+    width: 100%;
+    height: 120px;
+    background-image: url("../img/首页/header_bg.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    z-index: 2;
+}
+.headerContent{
+    width: 82%;
+    margin: 0 auto;
+}
+.logo{
+    float: left;
+    width: 40%;
+    height: 120px;
+}
+.headerMenu ul{
+    position: relative;
+    float: right;
+    margin-top: 47px;
+    margin-right: 16px;
+}
+.headerMenu ul li{
+    position: relative;
+    float: left;
+    padding: 0 11px;
+    height: 40px;
+}
+.headerMenu ul li a{
+    display: block;
+    color: #FFFFFF;
+    font-size: 17px;
+    font-weight: 600;
+}
+.menuIcon{
+    position: relative;
+    top: -1px;
+    display: inline-block;
+    float: right;
+    width: 25px;
+    height: 25px;
+    margin-left: 8px;
+    background-image: url("../img/header/nav_xiajiantou.png");
+    transition: all .4s;
+}
+.headerMenu ul li ul{
+    margin: 0 ;
+    position: absolute;
+    left: -10px;
+    top: 40px;
+    height: 0;
+    background: #36264a;
+    overflow: hidden;
+}
+.headerMenu ul li ul li{
+    position: relative;
+    padding: 0 30px;
+    box-sizing: border-box;
+    width: 180px;
+    height: 40px;
+}
+.headerMenu ul li ul li a{
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 40px;
+    transition: all .3s;
+}
+.headerMenu ul li ul li span{
+    display: none;
+    width: 5px;
+    height: 5px;
+    border-width: 1px 1px 0 0 ;
+    border-style: solid;
+    border-color: #FFF;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 17px;
+    right: 10px;
+
+}
+@keyframes anim1 {
+    20%{  height: 250px;}
+    36%{  height: 230px;}
+    52%{  height: 245px;}
+    68%{  height: 235px;}
+    84%{  height: 242px;}
+    100%{  height: 240px;}
+}
+@keyframes anim2 {
+    20%{  height: 130px;}
+    36%{  height: 110px;}
+    52%{  height: 125px;}
+    68%{  height: 115px;}
+    84%{  height: 122px;}
+    100%{  height: 120px;}
+}

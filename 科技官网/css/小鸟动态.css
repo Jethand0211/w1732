@@ -1,0 +1,245 @@
+/*通用*/
+*{margin: 0;
+padding: 0}
+body{background: #f1f2f6;}
+.all{
+    max-width: 1920px;
+    min-width: 1345px;
+    margin:0 auto;
+}
+/*头部制作（捷文）*/
+.top{width: 100%;
+height: 120px;
+background: red}
+
+/*正文标题*/
+.bird_tit{width: 1100px;
+height: 170px;
+margin:120px auto 0; }
+.bird_tit_h1{font-size: 54px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    color: #311759;
+    font-family: STKaiti, KaiTi_GB2312, "华文楷体", "宋体", Arial, Helvetica, sans-serif;}
+.bird_tit h2{font-family: Arial, Helvetica, sans-serif;
+font-size: 18px;
+letter-spacing: 6px;
+font-weight: normal;
+color: #311759;
+height: 21px;
+text-align: center;}
+.bird_tit img{display: block;
+margin:15px auto 0;}
+.bird_tit_h2{color: #311759;
+    width: 1100px;
+font-size: 30px;
+height: 60px;
+font-weight: bold;
+    font-family: STKaiti, KaiTi_GB2312, "华文楷体", "宋体", Arial, Helvetica, sans-serif;
+position: relative;
+background: url("../img/首页/bird_tit_line.png") no-repeat 0 58px;}
+.bird_tit_h2 span{display: block;
+    width: 61px;
+height: 58px;
+background: url("../img-小鸟动态/bird_tit_pen.png") no-repeat;
+position: absolute;right:-2px;top:7px;}
+.bird_tit_h2 span:hover{background: url("../img-小鸟动态/bird_tit_pen.png") no-repeat -61px 0}
+/*正文内容*/
+.bird_essay{width: 1130px;
+    height: 810px;
+position: relative;
+margin: 40px auto 0;  }
+.essay{width: 513px;
+height: 202px;
+padding: 36px 0 0 20px;
+margin: 0 20px 30px 0;
+float: left;
+position: relative;
+transition: all 0.5s;
+border: 1px solid #FFFFFF;
+background: #FFFFFF}
+.essay:hover{transform: translateY(-10px);
+border-color: #86759e;
+cursor: pointer}
+.essay:hover .essay_jiantou{transform: translateX(50px)}
+.essay_jiantou{display: block;
+position: absolute;top:36px;left: 0;
+transition: all 0.5s;}
+.essay_photo{display: block;
+float: left}
+.essay h5{width: 221px;
+height: 41px;
+float: right;
+font-size: 20px;
+color: #454548;
+line-height: 41px;
+    font-family: STKaiti, KaiTi_GB2312, "华文楷体", "宋体", Arial, Helvetica, sans-serif;
+margin-right:15px; }
+.essay h6{width: 221px;
+height: 18px;
+font-size: 14px;
+color: #6b6a6f;
+    font-family: Arial, Helvetica, sans-serif;
+float: right;
+margin-right:15px;}
+.essay p{width: 221px;
+height: 83px;
+float: right;
+color: #47464a;
+line-height: 25px;
+    font-family: KaiTi_GB2312;
+font-size: 15px;
+margin-right: 15px;
+padding-top: 8px;}
+/*隐藏*/
+.bird_essay_hd{width: 1130px;
+    height: 810px;
+    position: relative;
+    margin:0 auto;
+    display: none;}
+.bird_essay_hd .essay{width: 513px;
+    height: 202px;
+    padding: 36px 0 0 20px;
+    margin: 0 20px 30px 0;
+    float: left;
+    position: relative;
+    transition: all 0.5s;
+    border: 1px solid #FFFFFF;
+    background: #FFFFFF}
+.bird_essay_hd .essay:hover{transform: translateY(-10px);
+    border-color: #86759e;
+    cursor: pointer}
+.bird_essay_hd .essay:hover .essay_jiantou{transform: translateX(50px)}
+.bird_essay_hd .essay_jiantou{display: block;
+    position: absolute;top:36px;left: 0;
+    transition: all 0.5s;}
+.bird_essay_hd .essay_photo{display: block;
+    float: left}
+.bird_essay_hd .essay h5{width: 221px;
+    height: 41px;
+    float: right;
+    font-size: 20px;
+    color: #454548;
+    line-height: 41px;
+    font-family: STKaiti, KaiTi_GB2312, "华文楷体", "宋体", Arial, Helvetica, sans-serif;
+    margin-right:15px; }
+.bird_essay_hd .essay h6{width: 221px;
+    height: 18px;
+    font-size: 14px;
+    color: #6b6a6f;
+    font-family: Arial, Helvetica, sans-serif;
+    float: right;
+    margin-right:15px;}
+.bird_essay_hd .essay p{width: 221px;
+    height: 83px;
+    float: right;
+    color: #47464a;
+    line-height: 25px;
+    font-family: KaiTi_GB2312;
+    font-size: 15px;
+    margin-right: 15px;
+    padding-top: 8px;}
+/*点击展开*/
+.click_mouse{display: block;
+margin: 30px auto 0;}
+.click_down{width: 58px;
+height: 58px;
+margin: 15px auto 130px;
+background: url("../img/小鸟动态/click_down.png") no-repeat 0 -58px;
+cursor: pointer}
+.click_down:hover{background-position: 0 0;
+    transition: all 0.3s ease}   /*移动完直接恢复*/
+/*底部*/
+.ft_wave{width: 100%;
+height: 33px;
+background:url("../img/首页/footer_waveline.png") top center no-repeat; }
+.footer{width: 100%;
+height: 348px;
+position: relative;
+background: url("../img/首页/footer_bg.jpg") no-repeat;}
+.ft_center{width: 1100px;
+height: 329px;
+margin: 0 auto;
+position: relative;}
+.ft_notice{display: block;
+    width: 1100px;
+height: 65px;
+line-height: 65px;
+text-align: center;
+margin-top:79px;
+position: absolute;bottom: 0;
+border-top: 2px #9890a2 dashed;
+color: #FFFFFF;
+cursor: pointer;
+transition: all 1s;
+font-size: 15px;
+    text-decoration: none;
+    font-family: STKaiti, KaiTi_GB2312, "华文楷体", "宋体", Arial, Helvetica, sans-serif;}
+.ft_notice:hover{color: #00a1d6}
+/*底部：音乐*/
+.ft_music{width: 840px;
+height: 83px;
+position: relative;
+padding-top: 100px;
+padding-left: 260px;}
+.music{width: 57px;
+    height: 57px;
+    border:2px solid #ccd0d7;
+    position: relative;
+    float: left;
+    margin-left: 20px;
+    margin-top: 10px;
+    text-align: center;
+    line-height: 57px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFFFFF;
+    border-radius: 50%;
+    cursor: pointer;
+    font-family: STKaiti, KaiTi_GB2312, "华文楷体", "宋体", Arial, Helvetica, sans-serif;}
+@keyframes dh {
+    0%{transform: scale(0.9,1.1)}
+    15%{transform: scale(1.1,0.9)}
+    30%{transform: scale(0.85,1.15)}
+    45%{transform: scale(1.15,0.85)}
+    60%{transform: scale(1.1,0.9)}
+    75%{transform: scale(0.9,1.1)}
+    90%{transform: scale(1,1)}
+    100%{transform: scale(1,1)}
+}
+.music:hover{animation: dh 0.8s forwards;
+    background: #02a2d6;}
+/*浮动*/
+.fixed{width: 87px;
+    height: 161px;
+    position: fixed;
+    right: 40px;
+    bottom: 160px;
+    display: none;
+}   /*一开始隐藏，transition设置all让他出现效果。*/
+.fixed_earth{width: 87px;
+    height: 87px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+cursor: pointer;}
+.fixed_earth img{position: absolute;right: 0;}
+@keyframes earth {
+    0%{  width: 87px;transform: scale(0.9,1.1)} /*宽度不变，尺寸变换*/
+    13%{ transform: scale(1.1,0.9)}   /*尺寸变换*/
+    26%{ transform: scale(0.98,1.02)}  /*尺寸变换*/
+    39%{ transform: scale(1.02,0.98)}   /*尺寸变换*/
+    52%{  width: 235px;transform: scale(1,1)}   /*宽度恢复，显示图片*/
+    100%{  width: 235px;transform: scale(1,1)}  /*同上*/
+}
+.fixed_earth:hover{animation:earth 1s forwards;}
+.fixed_top{width: 50px;
+height: 50px;
+background: url("../img/首页/fixed_top.png") no-repeat 0 0;
+position:absolute;
+    left: 17px;
+cursor: pointer;}
+.fixed_top:hover{background-position:0 -50px;
+    transition: all 0.3s ease;}

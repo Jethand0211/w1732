@@ -1,0 +1,616 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: STKaiti, KaiTi_GB2312, "华文楷体", "宋体", Arial, Helvetica, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ul,ol{
+    list-style: none;
+}
+body{
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+.all{
+    max-width: 1920px;
+    min-width: 1345px;
+    margin:0 auto;
+}
+.startAnim{
+    position: absolute;
+    width: 100%;
+    max-width: 1920px;
+    min-width: 1345px;
+    margin:0 auto;
+    height: 705px;
+    background-color: #299AD6;
+    z-index:2;
+    overflow: hidden;
+    animation: start .51s 6s forwards;
+}
+@keyframes startGif {
+    to{  transform: translateY(-20px);}
+}
+@keyframes startH1{
+    from{  transform: translateY(20px);}
+    to{  transform: translateY(0);  opacity:1;}
+}
+@keyframes startSmall{
+    from{  transform: translateY(20px);}
+    to{  transform: translateY(0);  opacity:1;}
+}
+@keyframes startH2{
+    from{  transform: translateY(20px);}
+    to{  transform: translateY(0);  opacity:1;}
+}
+@keyframes startP{
+    from{  transform: translateY(20px);}
+    to{  transform: translateY(0);  opacity:1;}
+}
+@keyframes start {
+    to{  height: 0;}
+}
+.startGif{
+    width: 400px;
+    height: 400px;
+    margin:0 auto;
+    transform: translateY(100px) ;
+    animation: startGif 1s 4s forwards;
+}
+.startContent{
+    position: relative;
+    top: -30px;
+    width: 50%;
+    text-align: center;
+    margin:-4% auto 0;
+    color: #FFF;
+}
+.startContent h1{
+    font-weight: 500;
+    font-size: 44px;
+    margin-bottom: 0;
+    animation: startH1 1s 4.2s forwards;
+    opacity: 0;
+}
+.startContent small{
+    font-size: 20px;
+    letter-spacing: 3px;
+    animation: startSmall 1s 4.4s forwards;
+    opacity: 0;
+}
+.startContent h2{
+    position: relative;
+    font-size: 47px;
+    width: 70%;
+    padding-top: 5px;
+    margin: 6px auto 20px;
+    animation: startH2 1s 4.6s forwards;
+    opacity: 0;
+}
+.startContent h2:before{
+    content: '';
+    position:absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 20px;
+    height: 18px;
+    background-image: url("../img/小鸟掌学/yinhao1_zuo.png");
+}
+.startContent h2:after{
+    content: '';
+    position:absolute;
+    bottom: 0;
+    right: 0;
+    display: block;
+    width: 20px;
+    height: 18px;
+    background-image: url("../img/小鸟掌学/yinhao1_you.png");
+}
+.startContent p{
+    font-size: 20px;
+    animation: startP 1s 4.8s forwards;
+    opacity: 0;
+}
+.header{
+    position: fixed;
+    background-image: url("../img/首页/header_bg.jpg");
+    height: 50px;
+    max-width: 1920px;
+    min-width: 1345px;
+    margin:0 auto;
+    width: 100%;
+    background-position: top center;
+    z-index:1;
+}
+.logo{
+    width: 16%;
+    float: left;
+}
+.headerContent{
+    width: 81%;
+    margin: 0 auto;
+}
+.headerMenu{
+    float: left;
+    margin-top: 15px;
+}
+.headerMenu li{
+    position: relative;
+    float: left;
+    padding: 0 20px 0 10px;
+}
+.headerMenu li a{
+    font-size: 16px;
+    color: #aeabb4;
+    font-weight: 600;
+    transition: all .5s;
+}
+.headerMenu li span{
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    border:2px solid #FFFFFF;
+    border-radius: 50%;
+    opacity: 0;
+}
+.headerMenu li:hover a{
+    color: #FFF;
+}
+.headerMenu li:hover span ,.dot{
+    top: 24px;
+    left: 43%;
+    opacity: 1;
+    transition: all .5s;
+}
+.content{
+    /*width: 100%;*/
+    max-width: 1920px;
+    min-width: 1345px;
+    margin:0 auto;
+    position: absolute;
+    top: 0;
+    transition: top .5s;
+    overflow: hidden;
+}
+.block1,.block2,.block3,.block4,.block5{
+    height: 665px;
+}
+.block1,.block3{
+    background-color: #221236;
+    color: #FFF;
+}
+.block1{
+    margin-top: 50px;
+    position: relative;
+    top: 0;
+}
+.block1Gif{
+    position: relative;
+    top: -30px;
+    width: 400px;
+    margin: 0 auto ;
+}
+.block1Content{
+    position: relative;
+    top: -30px;
+    width: 50%;
+    text-align: center;
+    margin:-4% auto 0;
+    color: #FFF;
+}
+.block1Content h1{
+    font-weight: 500;
+    font-size: 44px;
+    margin-bottom: 0;
+}
+.block1Content small{
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+.block1Content h2{
+    position: relative;
+    font-size: 47px;
+    width: 70%;
+    padding-top: 5px;
+    margin: 6px auto 20px;
+}
+.block1Content h2:before{
+    content: '';
+    position:absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 20px;
+    height: 18px;
+    background-image: url("../img/小鸟掌学/yinhao1_zuo.png");
+}
+.block1Content h2:after{
+    content: '';
+    position:absolute;
+    bottom: 0;
+    right: 0;
+    display: block;
+    width: 20px;
+    height: 18px;
+    background-image: url("../img/小鸟掌学/yinhao1_you.png");
+}
+.block1Content p{
+    font-size: 20px;
+}
+.block1ContentIcon{
+    width: 58px;
+    height: 58px;
+    background-image: url("../img/小鸟掌学/donext.png");
+    background-position: 0 -58px;
+    overflow: hidden;
+    margin: 17px auto 0;
+}
+.block1ContentIcon:hover{
+    transition: all .5s;
+    background-position: 0 0;
+}
+.block2Content{
+    position: relative;
+    width: 93%;
+    margin: 0 auto;
+    height: 655px;
+}
+.block2Show{
+    width: 73%;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 40px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.block2Left,.block2Right{
+    position: absolute;
+    width: 58px;
+    height: 58px;
+    top: 49%;
+}
+.block2Left{
+    background-image: url("../img/小鸟掌学/goleft.png");
+}
+.block2Left:hover{
+    transition: all .5s;
+    background-position-x: -58px;
+}
+.block2Right{
+    right: 0;
+    background-image: url("../img/小鸟掌学/goright.png");
+    background-position-x: -58px;
+}
+.block2Right:hover{
+    transition: all .5s;
+    background-position-x: 0;
+}
+.block2Banner{
+    position: relative;
+    width: 300%;
+    transition: left .5s;
+    left: 0;
+}
+.block2Part1,.block2Part2,.block2Part3{
+    float: left;
+    width: 33.3%;
+}
+.block2Part1 h1{
+    text-align: center;
+    font-size: 52px;
+    color: #221236;
+    font-weight: 600;
+}
+.block2Part1 p{
+    position: relative;
+    width: 68%;
+    text-align: center;
+    margin:15px auto 0;
+    line-height: 30px;
+    font-size: 18px;
+    color: #6b6a6f
+}
+.block2Part1 p:before,.block2Part1 p:after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 18px;
+}
+.block2Part1 p:before{
+    background-image: url("../img/小鸟掌学/yinhao2_zuo.png");
+    top: 0;
+    left: -30px;
+}
+.block2Part1 p:after{
+    background-image: url("../img/小鸟掌学/yinhao2_you.png");
+    bottom: 0;
+    right: -30px;
+}
+.block2Part1 img{
+    float: left;
+    margin: 20px 15px 0;
+
+}
+.block2Part2Title{
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 45px;
+}
+.block2Part2Content{
+    width: 77%;
+    margin: 0 auto 53px;
+    height: 99px;
+}
+.block2Part2ContentImg{
+    display: inline-block;
+    float: left;
+    width: 98px;
+    height: 99px;
+}
+.block2Part2ContentText{
+    display: inline-block;
+    float: left;
+    margin: 15px 0 0 50px;
+}
+.block2Part2ContentText h2{
+    font-weight: 500;
+    color: #6b6a6f;
+}
+.block2Part2ContentText p{
+    color: #6b6a6f;
+    font-size: 18px;
+}
+.block2Part3Title{
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 65px;
+}
+.block2Part3Content h1{
+    position: relative;
+    width: 43%;
+    text-align: center;
+    margin: 0 auto 45px;
+    font-size: 36px;
+    font-weight: 500;
+    color: #221236;
+}
+.block2Part3Content h1:before,.block2Part3Content h1:after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 16px;
+    height: 15px;
+}
+.block2Part3Content h1:before{
+    top: -10px;
+    left: 0;
+    background-image: url("../img/小鸟掌学/yinhao3_zuo.png");
+}
+.block2Part3Content h1:after{
+    bottom: -5px;
+    right: 0;
+    background-image: url("../img/小鸟掌学/yinhao3_you.png");
+}
+.block2Part3Content p{
+    width: 80%;
+    line-height: 30px;
+    font-size: 18px;
+    color: #6b6a6f;
+    text-align: center;
+    margin:0 auto;
+    text-indent: 2em;
+}
+.block2Part3Icon{
+    width: 104px;
+    height: 170px;
+    margin: 90px auto 0;
+}
+.block3Title{
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+.block3Title h1{
+    text-align: center;
+    font-size: 48px;
+}
+.block3Content{
+    position: relative;
+    width: 72%;
+    margin: 100px auto 0;
+    padding: 30px 50px 0 50px;
+    box-sizing: border-box;
+}
+.block3Content:after{
+    content: '.';
+    visibility: hidden;
+    clear: both;
+    display: block;
+}
+.block3ContentDiv{
+    width: 50%;
+    height: 74px;
+    float: left;
+    margin-bottom: 40px;
+}
+.block3Circle{
+    width: 74px;
+    height: 74px;
+    background-image: url("../img/小鸟掌学/jiazhi_quanquan.png");
+    float: left;
+    line-height: 74px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.block3Text{
+    float: left;
+    width: 67%;
+    margin: 10px 0 0 25px;
+}
+.block3Text p{
+    font-size: 18px;
+}
+.block3Content i{
+    display: block;
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border: none;
+    animation: shining 2s infinite;
+}
+@keyframes shining {
+    0%{
+        opacity:0.2;
+    }
+    40%{
+        opacity:1;
+    }
+    100%{
+        opacity:0;
+     }
+}
+.block3LeftTop{
+    top: 0;
+    left: 0;
+    box-shadow: -3px -3px 2px #FFF;
+}
+.block3RightTop{
+    box-shadow: 3px -3px 2px #FFF;
+    top: 0;
+    right: 0;
+}
+.block3LeftBottom{
+    box-shadow: -3px 3px 2px #FFF;
+    left: 0;
+    bottom: 12px;
+}
+.block3RightBottom{
+    box-shadow: 3px 3px 2px #FFF;
+    right: 0;
+    bottom: 12px;
+}
+.block4{
+    background-color: #F1F2F6;
+}
+.block4 h1{
+    text-align: center;
+    font-size: 54px;
+    color: #311759;
+    font-weight: 600;
+    padding-top: 25px;
+}
+.block4Show{
+    width:70%;
+    height: 400px;
+    margin:30px auto 0;
+    overflow: hidden;
+}
+.block4Content{
+    position: relative;
+    width: 200%;
+    left:0;
+    transition: left .5s;
+}
+.block4Part1 p,.block4Part2 p{
+    margin:0 auto;
+    width: 98%;
+    font-size: 16px;
+    font-family: KaiTi_GB2312;
+    color: #535355;
+    line-height: 35px;
+    border-bottom: 1px dashed #CCC;
+}
+.block4Part1,.block4Part2{
+    width: 50%;
+    float: left;
+}
+.block4Footer{
+    width: 15%;
+    margin: 11px auto 0;
+}
+.block4Footer div{
+    width: 78px;
+    display: inline-block;
+    height: 8px;
+    margin: 0 10px;
+    border-radius: 4px;
+    background-color: #ACACAC;
+    overflow: hidden;
+}
+.block4Footer div span{
+    transition: width .5s .5s;
+    width: 0;
+    height: 8px;
+    background-color: #006FD6;
+}
+.block4Footer .block4Left span{
+    float: right;
+    width: 78px;
+}
+.block4Footer .block4Right span{
+    float: left;
+}
+.block5{
+    width: 100%;
+    overflow: hidden;
+}
+.block5Top{
+    position: absolute;
+    left: -50.5%;
+    transform: skew(-65.9deg);
+    background-color: #221236;
+    width: 100%;
+    height: 615px;
+}
+.appContent{
+    position: relative;
+    width: 60%;
+    height: 315px;
+    margin-left: 18%;
+    margin-top: 30px;
+    z-index:1;
+}
+.qrcode{
+    position: relative;
+    float: left;
+}
+.qrcode p{
+    position: absolute;
+    color: #FFF;
+    left: 70px;
+    font-size: 15px;
+}
+.qrcodeContent{
+    float: left;
+    color: #FFF;
+    font-size: 31px;
+    font-weight: 600;
+    margin-top: 110px;
+    margin-left: 75px;
+}
+.contactsContent{
+    position: relative;
+    width: 40%;
+    height: 200px;
+    margin-left: 47%;
+}
+.contactsContent h1{
+    color: #191919;
+    font-size: 31px;
+    background-image: url("../img/小鸟掌学/contacts_line.png");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    padding-bottom: 10px;
+}
+.contactsContent p{
+    font-size: 15px;
+    color: #191919;
+    line-height: 32px
+}
